@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #ccc;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 1rem 2rem;
+}
+
+.header .logo img {
+    width: 100px;
+}
+
+.header .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .menu ul li {
+    margin-left: 1.5rem;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.header .menu ul li a:hover {
+    color: #007BFF;
+}
+
+/* Carrossel */
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.slides {
+    display: flex;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Seções */
+.secao {
+    padding: 2rem;
+    text-align: center;
+}
+
+.secao h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.secao .conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f3d791;
+    color: rgb(0, 0, 0);
+}

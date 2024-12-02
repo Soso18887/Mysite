@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Carrossel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/LOGO B.png" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#mais-informações">Mais Informações</a></li>
+                <li><a href="#principais-servicos">Principais Serviços</a></li>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#rodape">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;"> Sejá Bem-Vindo(a) </h1>
+
+    <!-- Carrossel -->
+    <section id="carrossel" class="carrossel">
+        <div class="slides">
+            <div class="slide" style="background-image: url('img/banner\ 1.png');"></div>
+            <div class="slide" style="background-image: url('img/banner\ 2.png');"></div>
+            <div class="slide" style="background-image: url('img/banner\ 3.png');"></div>
+        </div>
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Seção 1 -->
+    <section id="secao1" class="secao">
+        <h2>Principais serviços</h2>
+        <div class="conteudo">
+            <div class="card">
+                <img src="img/trabalho.png" alt="Imagem 1">
+                <h3>Design Gráfico</h3>
+                <p>Transformo ideias em visuais impactantes.<br>
+                    Criação de logotipos, identidades visuais e artes criativas <br>
+                    que comunicam e inspiram.<br> </p>
+            </div>
+            <div class="card">
+                <img src="img/oi.jpg" alt="Imagem 2">
+                <h3>Desenvolvimento Web</h3>
+                <p>Sites modernos e responsivos com HTML, CSS e JavaScript. <br>
+                    Meu foco é entregar experiências digitais <br> 
+                    funcionais e envolventes. <br> </p>
+            </div>
+            <div class="card">
+                <img src="img/sa.jpeg" alt="Imagem 2">
+                <h3>Design UX/IX</h3>
+                <p>Experiências que conectam pessoas e tecnologia. <br>
+             Criação de interfaces intuitivas, estéticas e que realmente <br>
+             atendem às necessidades dos usuários. <br> </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2 -->
+    <section id="secao2" class="secao">
+        <h2> Mais Informações </h2>
+        <div class="conteudo">
+            <p>Busco transformar ideias em soluções criativas e funcionais. <br>
+            Cada projeto é uma oportunidade de mostrar minha paixão por design, <br>
+            inovação e tecnologia. Vamos construir algo incrível juntos! <br> </p>
+        </div>
+    </section>
+
+    <!-- Seção "Sobre Mim" -->
+    <section id="sobre-mim" class="secao">
+        <h2>Sobre Mim</h2>
+        <p>Sou um profissional apaixonado por design, desenvolvimento e experiências digitais. <br>
+            Este site é um reflexo do meu trabalho, criatividade e dedicação ao que amo fazer. <br> 
+            Trabalho com foco na funcionalidade, estética e impacto, buscando sempre a melhor solução <br>
+            para cada desafio. Estou em constante aprendizado, explorando novas ferramentas e <br>
+            para cada desafio. Estou em constante aprendizado, explorando novas ferramentas e <br></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="rodape" class="rodape">
+        <img src="img/nome marca.png" alt="nome da marca" style="text-align: center; height: 80px;"> <br>
+        <img src="img/slogan.png" alt="slogan da marca" style="text-align: center;height: 40px;"> <br>
+        <img src="img/contato.png" alt="informações de contato"  style="text-align: center;height: 70px;"> <br>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
